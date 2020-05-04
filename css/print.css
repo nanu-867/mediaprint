@@ -1,0 +1,25 @@
+@media print{
+	#page {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+    
+  a:after {
+      content: "(" attr(href) ")";
+    }
+
+  h1{
+    font-size: 28px;
+  }
+ 
+  .contentText p{
+    margin: 0px auto;
+  }
+
+  .contentText {
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+  }
+  
+}
